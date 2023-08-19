@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/summer-referral-competition/static/css/main.154528b5.css",
+    "main.js": "/summer-referral-competition/static/js/main.8b86dff9.js",
+    "index.html": "/summer-referral-competition/index.html",
+    "main.154528b5.css.map": "/summer-referral-competition/static/css/main.154528b5.css.map",
+    "main.8b86dff9.js.map": "/summer-referral-competition/static/js/main.8b86dff9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.154528b5.css",
+    "static/js/main.8b86dff9.js"
+  ]
+}
