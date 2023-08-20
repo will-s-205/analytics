@@ -1,4 +1,5 @@
 import '../App.scss';
+import data from './data.js';
 
 function Participants() {
     return (
