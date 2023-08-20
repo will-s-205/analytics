@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <div className="App">
-        <Header />
         <div className="main">
+            <Header />
           <div className='wrapper grid'>
             <Participants />
             <Insight />

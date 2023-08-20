@@ -18,16 +18,16 @@ function header() {
 
 function leaderboardData() {
     return data
-        .slice(0, 5)
-        .sort((a, b) => b.sign_ups - a.sign_ups)
-        .map(({ email, country, sign_ups }, index) => {
+        .slice(0, 4)
+        .sort((a, b) => b.friends_invites - a.friends_invites)
+        .map(({ email, friends_invites, country }, index) => {
             return (
                 <div key={index}>
 
                     <div className='data'>
                         <label className='email'>{email}</label>
+                        <label className='invites'>{friends_invites.toLocaleString('en-US')}</label>
                         <label className='country'>{country}</label>
-                        <label className='number'>{sign_ups.toLocaleString('en-US')}</label>
                     </div>
                 </div>
             )
