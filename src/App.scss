@@ -106,10 +106,6 @@
     margin-top: 2px; // MARGIN TOP OF DATA
 }
 
-.emoji {
-    font-size: 14px; // FONT SIZE OF EMOJI
-}
-
 .leaderboard-sub-header {
     display: flex; // DISPLAY FLEX 
     justify-content: space-between; // JUSTIFY CONTENT
@@ -142,4 +138,8 @@
     padding-top: 10px; // PADDING TOP
     padding-left: 20px; // PADDING LEFT
     padding-right: 20px; // PADDING RIGHT
+}
+
+.emoji-country{
+    // font-size: 12px; // FONT SIZE OF EMOJI COUNTRY;
 }

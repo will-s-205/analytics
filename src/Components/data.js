@@ -14,7 +14,7 @@ export default [
         "emoji": "🇮🇪",
         "faang_company": "Facebook",
         "email": "john.doedoe@gmail.com",
-        "sign_ups": 2571,
+        "sign_ups": 9571,
         "friends_invites": 4232
     },
     {
@@ -50,7 +50,7 @@ export default [
         "emoji": "🇺🇸",
         "faang_company": "YouTube",
         "email": "bob.dodo@gmail.com",
-        "sign_ups": 354,
+        "sign_ups": 4354,
         "friends_invites": 2178
     },
 ]
