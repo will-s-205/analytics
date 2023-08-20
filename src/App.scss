@@ -1,3 +1,5 @@
+@import './index.scss';
+
 .header {
     max-width: 560px;
     margin: 0 auto;
@@ -14,8 +16,6 @@
     padding: 1rem; // GAP BETWEEN GRID AND CONTAINER
     border: 1px solid #000; // BORDER AROUND GRID
     background-color: var(--white); // BACKGROUND COLOUR
-    // justify-content: space-evenly; /* horizontally spreads the grid items evenly */
-    // align-content: space-evenly;   /* vertically spreads the grid items evenly */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
 }
@@ -52,7 +52,7 @@
 // .leaderboard {
 // }
 
-// .traffic {
+// .traffic {  
 // }
 
 // .location {
@@ -63,4 +63,32 @@
 
 .footer {
     text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button {
+    background: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--white-light);
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
