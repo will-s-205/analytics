@@ -1,5 +1,5 @@
 import '../App.scss'
-import '../assets/scss/Participants.scss';
+import '../assets/scss/Participants.scss'
 import data from './data.js'
 import React, { useState, useCallback } from "react"
 import { BarChart, Bar, Cell, ResponsiveContainer } from "recharts"
@@ -9,8 +9,8 @@ import participants from '../images/participants.png';
 
 function Participants() {
     const maxSignups = data.map(data => data.sign_ups).reduce((a, b) => a + b, 0)
-    const [activeIndex, setActiveIndex] = useState(0);
-    const activeItem = data[activeIndex];
+    const [activeIndex, setActiveIndex] = useState(0)
+    const activeItem = data[activeIndex]
 
     const handleClick = useCallback(
         (entry, index) => { // DO NOT REMOVE ENTRY FROM CALLBACK FUNCTION
@@ -47,4 +47,4 @@ function Participants() {
     );
 }
 
-export default Participants;
+export default Participants

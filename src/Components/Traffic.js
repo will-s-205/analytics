@@ -1,7 +1,7 @@
 import '../App.scss'
 import data from './data.js'
 
-function header() {
+function renderTrafficHeader() {
     return (
         <div className='header-container'>
             <h4>Traffic</h4>
@@ -12,11 +12,12 @@ function header() {
         </div>
     )
 }
-function trafficData() {
+function renderTrafficData() {
     const maxSignups = data.map(data => data.sign_ups).reduce((a, b) => Math.max(a, b))
-    const getPercentage = (currentSignups, maxSignups) => (100 * currentSignups) / maxSignups / (data.length/3) // THE LAST OPERATION IS TO GET THE AVERAGE OF THE 3 GRAPHS FOR BETTER UI EXPERIENCE
+    const getPercentage = (currentSignups, maxSignups) => (100 * currentSignups) / maxSignups // FUNCTION TO GET THE PERCENTAGE OF SIGNUPS FOR EACH COUNTRY (USED TO SET THE WIDTH OF THE PROGRESS BAR)
 
     return data
+        .slice(0, 6)
         .sort((a, b) => b.sign_ups - a.sign_ups)
         .map(({ faang_company, sign_ups }, index) => {
             return (
@@ -42,8 +43,8 @@ function Traffic() {
     return (
         <div className='traffic minor-grid-item'>
             <div className='container'>
-                {header()}
-                {trafficData()}
+                {renderTrafficHeader()}
+                {renderTrafficData()}
                 {footer()}
             </div>
         </div>

@@ -1,7 +1,8 @@
-import '../App.scss';
-import data from './data.js';
+import '../App.scss'
+import data from './data.js'
+import '../assets/scss/Leaderboard.scss'
 
-function header() {
+function renderLeaderboardHeader() {
     return (
         <div>
             <div className='header-container'>
@@ -16,7 +17,7 @@ function header() {
     )
 }
 
-function leaderboardData() {
+function renderLeaderboardData() {
     return data
         .slice(0, 4)
         .sort((a, b) => b.friends_invites - a.friends_invites)
@@ -34,7 +35,7 @@ function leaderboardData() {
         })
 }
 
-function footer() {
+function renderLeaderboardFooter() {
     return (
         <div>
             <button className='button'>See all countries</button>
@@ -46,12 +47,12 @@ function Leaderboard() {
     return (
         <div className='leaderboard minor-grid-item'>
             <div className='container'>
-                {header()}
-                {leaderboardData()}
-                {footer()}
+                {renderLeaderboardHeader()}
+                {renderLeaderboardData()}
+                {renderLeaderboardFooter()}
             </div>
         </div>
     );
 }
 
-export default Leaderboard;
+export default Leaderboard

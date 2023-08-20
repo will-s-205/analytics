@@ -1,4 +1,4 @@
-import '../App.scss';
+import '../App.scss'
 
 function Footer() {
   return (
@@ -10,4 +10,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer

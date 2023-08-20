@@ -1,4 +1,4 @@
-import '../App.scss';
+import '../App.scss'
 
 function Header() {
     return (
@@ -9,4 +9,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Header

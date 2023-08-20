@@ -1,8 +1,8 @@
-import '../App.scss';
-import '../assets/scss/Insight.scss';
-import bulb from '../images/bulb.png';
-import greenUp from '../images/green-up.png';
-import redDown from '../images/red-down.png';
+import '../App.scss'
+import '../assets/scss/Insight.scss'
+import bulb from '../images/bulb.png'
+import greenUp from '../images/green-up.png'
+import redDown from '../images/red-down.png'
 
 function Insight() {
     return (
@@ -43,4 +43,4 @@ function Insight() {
     );
 }
 
-export default Insight;
+export default Insight
