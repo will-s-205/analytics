@@ -15,19 +15,19 @@ function Insight() {
                 <div className='insighsts-summary'>
                     <h3>Summary</h3>
                     <div className='insight-tips'>
-                        <img className='redDown' src={redDown} alt='bulb' />
+                        <img className='redDown' src={redDown} alt='red Down Arrow' />
                         <p><b>Signups are slowing down.</b> -5% new than last week.</p>
                     </div>
                     <div className='insight-tips'>
-                        <img className='greenUp' src={greenUp} alt='bulb' />
+                        <img className='greenUp' src={greenUp} alt='Green Up Arrow' />
                         <p><b>80%</b> of your signups were invited by other members.</p>
                     </div>
                     <div className='insight-tips'>
-                        <img className='bulb' src={bulb} alt='bulb' />
+                        <img className='bulb' src={bulb} alt='lightbulb' />
                         <p><b>80%</b> of your signups were invited by a friend</p>
                     </div>
                     <div className='insight-tips'>
-                        <img className='bulb' src={bulb} alt='bulb' />
+                        <img className='bulb' src={bulb} alt='lightbulb' />
                         <p><b>80%</b> of your signups were invited by a friend</p>
                     </div>
                 </div>
