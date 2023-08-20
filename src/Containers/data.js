@@ -4,7 +4,7 @@ export default [
         "city": "Mountain View",
         "emoji": "🇺🇸",
         "faang_company": "Google",
-        "email": "john.doe@gmail.com",
+        "email": "mary.smith@mail.com",
         "sign_ups": 3524,
         "friends_invites": 178
     },
@@ -13,7 +13,7 @@ export default [
         "city": "Dublin",
         "emoji": "🇮🇪",
         "faang_company": "Facebook",
-        "email": "mary.smith@facebook.com",
+        "email": "john.doe@gmail.com",
         "sign_ups": 2571,
         "friends_invites": 232
     },
@@ -22,7 +22,7 @@ export default [
         "city": "Cupertino",
         "emoji": "🇺🇸",
         "faang_company": "Apple",
-        "email": "alex.apple@icloud.com",
+        "email": "alex.bob@icloud.com",
         "sign_ups": 6290,
         "friends_invites": 450
     },
@@ -31,7 +31,7 @@ export default [
         "city": "Hyderabad",
         "emoji": "🇮🇳",
         "faang_company": "Amazon",
-        "email": "priya.amazon@gmail.com",
+        "email": "priya.aka@gmail.com",
         "sign_ups": 7589,
         "friends_invites": 312
     },
