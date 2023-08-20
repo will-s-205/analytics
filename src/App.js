@@ -1,40 +1,29 @@
 import './App.scss';
-
-console.log();
-console.log("\uD83C\uDDE7\uD83C\uDDF7 Brazil");
+import Header from './Containers/Header';
+import Insight from './Containers/Insight';
+import Participants from './Containers/Participants';
+import Leaderboard from './Containers/Leaderboard';
+import Traffic from './Containers/Traffic';
+import Locations from './Containers/Locations';
+import Behaviour from './Containers/Behaviour';
+import Footer from './Containers/Footer';
 
 function App() {
   return (
     <div>
       <div className="App">
-
-        <div className="header">
-          <h1>Summer referral competition</h1>
-          <div className="filter-days-bar"></div>
-        </div>
-
+        <Header />
         <div className="main">
           <div className='wrapper grid'>
-            <div className='participants participants-grid-item'></div>
-            <div className='insights insights-grid-item'></div>
-            <div className='leaderboard minor-grid-item'>
-              <p>User leaderboard</p>
-            </div>
-            <div className='traffic minor-grid-item'>
-              <p>Traffic</p>
-            </div>
-            <div className='location minor-grid-item'>
-              <p>Sign Up locations</p>
-            </div>
-            <div className='behaviour minor-grid-item'>
-              <p>Behaviour</p>
-            </div>
+            <Participants />
+            <Insight />
+            <Leaderboard />
+            <Traffic />
+            <Locations />
+            <Behaviour />
           </div>
         </div>
-
-        {/* <div className="footer">
-          <p>by William Step</p>
-        </div> */}
+        <Footer />
       </div>
     </div>
   );
