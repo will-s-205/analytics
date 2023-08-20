@@ -120,26 +120,6 @@
     border-radius: 5px; // BORDER RADIUS OF PROGRESS BAR
 }
 
-.insights {
-    display: flex; // DISPLAY FLEX 
-    flex-direction: column; // FLEX DIRECTION
-    font-size: 0.8rem; // FONT SIZE OF INSIGHTS
-    line-height: 0.5rem; // LINE HEIGHT OF INSIGHTS
-}
-
-.insights-info {
-    display: flex; // DISPLAY FLEX 
-    justify-content: space-between; // JUSTIFY CONTENT
-    padding-left: 20px; // PADDING LEFT 
-    padding-right: 20px; // PADDING RIGHT 
-}
-
-.header-insights {
-    padding-top: 10px; // PADDING TOP
-    padding-left: 20px; // PADDING LEFT
-    padding-right: 20px; // PADDING RIGHT
-}
-
-.emoji-country{
-    // font-size: 12px; // FONT SIZE OF EMOJI COUNTRY;
+.emoji-country {
+    font-size: 16px; // FONT SIZE OF EMOJI COUNTRY;
 }

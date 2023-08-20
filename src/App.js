@@ -1,12 +1,12 @@
 import './App.scss';
-import Header from './Components/Header';
-import Insight from './Components/Insight';
-import Participants from './Components/Participants';
-import Leaderboard from './Components/Leaderboard';
-import Traffic from './Components/Traffic';
-import Locations from './Components/Locations';
-import Behaviour from './Components/Behaviour';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Insight from './components/Insight';
+import Participants from './components/Participants';
+import Leaderboard from './components/Leaderboard';
+import Traffic from './components/Traffic';
+import Locations from './components/Locations';
+import Behaviour from './components/Behaviour';
+import Footer from './components/Footer';
 
 function App() {
   return (

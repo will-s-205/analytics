@@ -1,0 +1,45 @@
+.insights {
+    display: flex; // DISPLAY FLEX 
+    flex-direction: column; // FLEX DIRECTION
+    font-size: 0.8rem; // FONT SIZE OF INSIGHTS
+    line-height: 0.5rem; // LINE HEIGHT OF INSIGHTS
+}
+
+.insights-info {
+    display: flex; // DISPLAY FLEX
+    justify-content: space-between; // JUSTIFY CONTENT
+    padding-left: 15px; // PADDING LEFT 
+    padding-right: 15px; // PADDING RIGHT 
+}
+
+.header-insights {
+    padding-top: 10px; // PADDING TOP
+    padding-left: 20px; // PADDING LEFT
+    padding-right: 20px; // PADDING RIGHT
+}
+
+.insight-tips {
+    display: flex; // DISPLAY FLEX
+    align-items: center; // ALIGN ITEMS
+    margin-top: -10px; // MARGIN TOP
+    font-size: 12px; // FONT SIZE
+}
+
+.insight-tips-right {
+    margin-top: 18px; // MARGIN TOP 
+    font-size: 11px; // FONT SIZE 
+}
+
+.greenUp,
+.redDown,
+.bulb {
+    width: 20px; // WIDTH OF GREEN UP, RED DOWN, BULB
+    height: 20px; // HEIGHT OF GREEN UP, RED DOWN, BULB
+    padding: 5px; // PADDING OF GREEN UP, RED DOWN, BULB 
+    border-radius: 10px; // BORDER RADIUS OF GREEN UP, RED DOWN, BULB
+    margin-right: 5px; // MARGIN RIGHT OF GREEN UP, RED DOWN, BULB
+}
+
+.insight-link {
+    color: var(--black); // COLOUR OF INSIGHT LINK
+}

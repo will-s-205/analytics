@@ -1,5 +1,8 @@
 import '../App.scss';
-import data from './data.js';
+import '../assets/scss/Insight.scss';
+import bulb from '../images/bulb.png';
+import greenUp from '../images/green-up.png';
+import redDown from '../images/red-down.png';
 
 function Insight() {
     return (
@@ -9,17 +12,31 @@ function Insight() {
                 <p>Making analytics simple and actionable</p>
             </div>
             <div className='insights-info'>
-                <div className='insights-summary'>
+                <div className='insighsts-summary'>
                     <h3>Summary</h3>
-                    <p>Signups are slowing down. -5% new than last week.</p>
-                    <p>80% of your signups were invited by other members.</p>
-                    <p>80% of your signups were invited by a friend</p>
-                    <p>80% of your signups were invited by a friend</p>
+                    <div className='insight-tips'>
+                        <img className='redDown' src={redDown} alt='bulb' />
+                        <p><b>Signups are slowing down.</b> -5% new than last week.</p>
+                    </div>
+                    <div className='insight-tips'>
+                        <img className='greenUp' src={greenUp} alt='bulb' />
+                        <p><b>80%</b> of your signups were invited by other members.</p>
+                    </div>
+                    <div className='insight-tips'>
+                        <img className='bulb' src={bulb} alt='bulb' />
+                        <p><b>80%</b> of your signups were invited by a friend</p>
+                    </div>
+                    <div className='insight-tips'>
+                        <img className='bulb' src={bulb} alt='bulb' />
+                        <p><b>80%</b> of your signups were invited by a friend</p>
+                    </div>
                 </div>
                 <div className='header-recommendation'>
                     <h3>Recommendations</h3>
-                    <p>Make sure to promote and <a href="#" rel="noopener noreferrer">share your form</a></p>
-                    <p>Congrats! This is huge. Keep giving rewards for your users</p>
+                    <div className='insight-tips-right'>
+                        <p><b>Make sure to promote and <a className='insight-link' href="#" rel="noopener noreferrer">share your form</a></b></p>
+                        <p><b>Congrats! This is huge. Keep giving rewards for your users</b></p>
+                    </div>
                 </div>
             </div>
         </div>

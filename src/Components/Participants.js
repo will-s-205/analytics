@@ -1,5 +1,6 @@
 import '../App.scss';
 import data from './data.js';
+import recharts from 'recharts';
 
 function Participants() {
     return (
