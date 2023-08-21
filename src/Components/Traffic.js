@@ -30,13 +30,7 @@ function Traffic() {
         <div className='traffic minor-grid-item'>
             <div className='container'>
                 <Header title='Traffic' button1='Source' button2='City' handleButtonClick={toggleButtons} isToggled={isToggled} />
-                <button onClick={toggleData}>Toggle Data</button>
-                <Main
-                    number={6}
-                    data={dataSet}
-                    // onClick={toggleData}
-                    isToggled={false}
-                />
+                <Main number={6} data={dataSet} />
                 <Footer seeAll='See traffic sources' />
             </div>
         </div>

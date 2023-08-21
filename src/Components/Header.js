@@ -6,15 +6,12 @@ function Header(props) {
   const [button2Clicked, setButton2Clicked] = useState(false)
 
   useEffect(() => {
-    console.log('Header - useEffect')
     if (props.isToggled === true) {
       setButton1Clicked(false)
       setButton2Clicked(true)
-      console.log('Header - isToggled is true')
     } else if (props.isToggled === false) {
       setButton1Clicked(true)
       setButton2Clicked(false)
-      console.log('Header - isToggled is false')
     }
   }, [props.isToggled])
 
