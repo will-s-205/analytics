@@ -40,7 +40,7 @@ function Insight() {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default Insight

@@ -47,6 +47,15 @@ function Footer(props) {
         else if (props.data === 'leaderboard') {
           displayValue = <span className='span'> {item.browser} </span>
         }
+        // SPECIAL CASE - SEE ALL EMAILS
+        else if (props.data === 'email') {
+          displayValue = <span className='email'> {item.email} </span>
+          return (
+            <div className='data' key={index}>
+              {displayValue}
+            </div>
+          )
+        }
         return (
           <div className='data' key={index}>
             <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>

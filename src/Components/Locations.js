@@ -6,7 +6,8 @@ import Main from './Main'
 
 function Locations() {
     const [dataSet, setDataset] = useState('emojiAndCountry')
-    const [isToggled, setIsToggled] = useState(false)
+    const [isButtonsToggled, setIsButtonsToggled] = useState(false)
+    const [isSeeAllClicked, setIsSeeAllClicked] = useState(true)
 
     function toggleData() {
         if (dataSet === 'emojiAndCountry') {
@@ -17,21 +18,29 @@ function Locations() {
     }
 
     function toggleButtons() {
-        if (isToggled === true) {
-            setIsToggled(false)
+        if (isButtonsToggled === true) {
+            setIsButtonsToggled(false)
             toggleData()
         } else {
-            setIsToggled(true)
+            setIsButtonsToggled(true)
             toggleData()
+        }
+    }
+
+    function seeAll() {
+        if (isSeeAllClicked === false) {
+            setIsSeeAllClicked(true)
+        } else {
+            setIsSeeAllClicked(false)
         }
     }
 
     return (
         <div className='location minor-grid-item'>
             <div className='container'>
-                <Header title='Signup location' button1='Country' button2='City' handleButtonClick={toggleButtons} isToggled={isToggled} />
+                <Header title='Signup location' button1='Country' button2='City' handleButtonClick={toggleButtons} isToggled={isButtonsToggled} />
                 <Main number={5} data={dataSet} />
-                <Footer seeAll='See all countries' />
+                <Footer data={dataSet} seeAll='See all countries' handleButtonClick={seeAll} isClicked={isSeeAllClicked} />
             </div>
         </div>
     )

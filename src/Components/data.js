@@ -44,7 +44,7 @@ const data = [
         "city": "Beijing",
         "emoji": "🇨🇳",
         "company": "Baidu",
-        "email": "liu.bai@baidu.cn",
+        "email": "liu.baidu@baidu.cn",
         "sign_ups": 8521,
         "friends_invites": 4372,
         "browser": "UC Browser"

@@ -33,6 +33,9 @@ function Main(props) {
       else if (props.data === 'leaderboard') {
         displayValue = <span className='span'> {item.browser} </span>
       }
+      else if (props.data === 'emails') {
+        displayValue = <span className='emails'> {item.browser} </span>
+      }
       return (
         <div className='data' key={index}>
           <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>

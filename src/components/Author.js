@@ -7,7 +7,7 @@ function Author() {
         <p>by William Step</p>
       </a>
     </div>
-  );
+  )
 }
 
 export default Author
