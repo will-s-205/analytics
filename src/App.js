@@ -1,19 +1,19 @@
-import './App.scss';
-import Header from './components/Header';
-import Insight from './components/Insight';
-import Participants from './components/Participants';
-import Leaderboard from './components/Leaderboard';
-import Traffic from './components/Traffic';
-import Locations from './components/Locations';
-import Behaviour from './components/Behaviour';
-import Footer from './components/Footer';
+import './App.scss'
+import Title from './components/Title'
+import Insight from './components/Insight'
+import Participants from './components/Participants'
+import Leaderboard from './components/Leaderboard'
+import Traffic from './components/Traffic'
+import Locations from './components/Locations'
+import Behaviour from './components/Behaviour'
+import Author from './components/Author'
 
 function App() {
   return (
     <div>
       <div className="App">
         <div className="main">
-            <Header />
+          <Title title="Summer referral competition" />
           <div className='wrapper grid'>
             <Participants />
             <Insight />
@@ -23,10 +23,10 @@ function App() {
             <Behaviour />
           </div>
         </div>
-        <Footer />
+        <Author />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

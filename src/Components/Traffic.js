@@ -1,5 +1,7 @@
 import '../App.scss'
 import data from './data.js'
+import Footer from './Footer'
+import Header from './Header'
 
 function renderTrafficHeader() {
     return (
@@ -12,6 +14,7 @@ function renderTrafficHeader() {
         </div>
     )
 }
+
 function renderTrafficData() {
     const maxSignups = data.map(data => data.sign_ups).reduce((a, b) => Math.max(a, b))
     const getPercentage = (currentSignups, maxSignups) => (100 * currentSignups) / maxSignups // FUNCTION TO GET THE PERCENTAGE OF SIGNUPS FOR EACH COUNTRY (USED TO SET THE WIDTH OF THE PROGRESS BAR)
@@ -31,7 +34,7 @@ function renderTrafficData() {
         })
 }
 
-function footer() {
+function renderTrafficfooter() {
     return (
         <div>
             <button className='button'>See traffic sources</button>
@@ -43,9 +46,9 @@ function Traffic() {
     return (
         <div className='traffic minor-grid-item'>
             <div className='container'>
-                {renderTrafficHeader()}
+                <Header title='Traffic' button1='Source' button2='City' />
                 {renderTrafficData()}
-                {footer()}
+                <Footer button1='See traffic sources' />
             </div>
         </div>
     )
