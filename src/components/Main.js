@@ -13,18 +13,30 @@ function Main(props) {
       let displayValue = ''
       // DEPENDING ON THE PROPS PASSED, DISPLAY THE COMPANY OR COUNTRY OR ELSE
       if (props.data === 'company') {
-        displayValue = item.company
-      } else if (props.data === 'country') {
-        displayValue = item.country
-      } else if (props.data === 'emojiAndCountry') {
-        displayValue = item.emoji + " " + item.country
-      } else if (props.data === 'city') {
-        displayValue = item.city
+        displayValue = <span className='span'> {item.company} </span>
+      }
+      else if (props.data === 'country') {
+        displayValue = <span className='span'> {item.country} </span>
+      }
+      else if (props.data === 'emojiAndCountry') {
+        displayValue = <span className='span'> {item.emoji + " " + item.country} </span>
+      }
+      else if (props.data === 'emojiAndCity') {
+        displayValue = <span className='span'> {item.emoji + " " + item.city} </span>
+      }
+      else if (props.data === 'city') {
+        displayValue = <span className='span'> {item.city} </span>
+      }
+      else if (props.data === 'browser') {
+        displayValue = <span className='span'> {item.browser} </span>
+      }
+      else if (props.data === 'leaderboard') {
+        displayValue = <span className='span'> {item.browser} </span>
       }
       return (
         <div className='data' key={index}>
           <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>
-            <span className='span'> {displayValue} </span>
+            {displayValue}
           </div>
           <span className='number'>{item.sign_ups.toLocaleString('en-US')}</span>
         </div>

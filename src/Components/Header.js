@@ -15,26 +15,6 @@ function Header(props) {
     }
   }, [props.isToggled])
 
-  // const handleButtonClick = () => {
-  //   if (props.isToggled === true) {
-  //     setButton1Clicked(false)
-  //     console.log('Header - Button 1 clicked')
-  //   } else if (props.isToggled === false) {
-  //     setButton2Clicked(false)
-  //     console.log('Header - Button 2 clicked')
-  //   }
-  // }
-
-  // const handleButton1Click = () => {
-  //   setButton1Clicked(true)
-  //   setButton2Clicked(false)
-  // }
-
-  // const handleButton2Click = () => {
-  //   setButton1Clicked(false)
-  //   setButton2Clicked(true)
-  // }
-
   return (
     <div className='header-container'>
       <h4>{props.title}</h4>

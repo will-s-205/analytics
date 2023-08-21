@@ -5,14 +5,14 @@ import Header from './Header'
 import Main from './Main'
 
 function Behaviour() {
-    const [dataSet, setDataset] = useState('country')
+    const [dataSet, setDataset] = useState('browser')
     const [isToggled, setIsToggled] = useState(false)
 
     function toggleData() {
-        if (dataSet === 'country') {
-            setDataset('city')
+        if (dataSet === 'browser') {
+            setDataset('company')
         } else {
-            setDataset('country')
+            setDataset('browser')
         }
     }
 
