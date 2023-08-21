@@ -1,6 +1,7 @@
 import '../App.scss'
-import data from './data.js'
 import '../assets/scss/Leaderboard.scss'
+import data from './data.js'
+import Footer from './Footer'
 
 function renderLeaderboardHeader() {
     return (
@@ -9,9 +10,9 @@ function renderLeaderboardHeader() {
                 <h4>User leaderboard</h4>
             </div>
             <div className='leaderboard-sub-header'>
-                <label>Email</label>
-                <label className='Friends'>Friends invited</label>
-                <label>Country</label>
+                <span>Email</span>
+                <span className='Friends'>Friends invited</span>
+                <span>Country</span>
             </div>
         </div>
     )
@@ -26,21 +27,13 @@ function renderLeaderboardData() {
                 <div key={index}>
 
                     <div className='data'>
-                        <label className='email'>{email}</label>
-                        <label className='invites'>{friends_invites.toLocaleString('en-US')}</label>
-                        <label className='country'>{country}</label>
+                        <span className='email'>{email}</span>
+                        <span className='invites'>{friends_invites.toLocaleString('en-US')}</span>
+                        <span className='country'>{country}</span>
                     </div>
                 </div>
             )
         })
-}
-
-function renderLeaderboardFooter() {
-    return (
-        <div>
-            <button className='button'>See all countries</button>
-        </div>
-    )
 }
 
 function Leaderboard() {
@@ -49,7 +42,7 @@ function Leaderboard() {
             <div className='container'>
                 {renderLeaderboardHeader()}
                 {renderLeaderboardData()}
-                {renderLeaderboardFooter()}
+                <Footer seeAll='See all countries' />
             </div>
         </div>
     );

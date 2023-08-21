@@ -1,8 +1,8 @@
 import '../App.scss'
 import '../assets/scss/Insight.scss'
-import bulb from '../images/bulb.png'
-import greenUp from '../images/green-up.png'
-import redDown from '../images/red-down.png'
+import bulb from '../assets/images/bulb.png'
+import greenUp from '../assets/images/green-up.png'
+import redDown from '../assets/images/red-down.png'
 
 function Insight() {
     return (

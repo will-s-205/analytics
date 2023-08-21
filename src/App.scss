@@ -1,28 +1,14 @@
 @import './index.scss';
 
-.header-main {
-    display: flex; // DISPLAY FLEX 
-    justify-content: space-between; // JUSTIFY CONTENT 
-    padding-left: 3rem; // PADDING LEFT
-    padding-right: 3rem; // PADDING RIGHT 
-    margin-top: 30px; // MARGIN TOP
-    margin-bottom: -35px; // MARGIN BOTTOM 
+.header {
+    max-width: 760px; // MAX WIDTH OF HEADER 
+    margin: 0 auto; // MARGIN OF HEADER 
 }
 
 .title {
     font-size: 25px; // FONT SIZE OF TITLE
     font-weight: 600; // FONT WEIGHT OF TITLE 
     color: #000; // COLOUR OF TITLE
-}
-
-.filter-days-bar {
-    width: 100px; // WIDTH OF FILTER DAYS BAR
-    background: #000; // BACKGROUND COLOUR OF FILTER DAYS BAR
-}
-
-.header {
-    max-width: 760px; // MAX WIDTH OF HEADER 
-    margin: 0 auto; // MARGIN OF HEADER 
 }
 
 .main {
@@ -72,7 +58,7 @@
 }
 
 .footer {
-    text-align: center; // TEXT ALIGNMENT 
+    text-align: center; // TEXT ALIGNMENT
 }
 
 .container {
@@ -91,12 +77,17 @@
     background: var(--white); // BACKGROUND COLOUR 
     border: none; // BORDER NONE
     border-radius: 5px; // BORDER RADIUS 
-    padding: 8px; // PADDING 
+    padding: 5px; // PADDING 
     cursor: pointer; // CURSOR POINTER 
 }
 
 .button:hover {
     background-color: var(--white-light); // BACKGROUND COLOUR ON HOVER
+}
+
+.footer-button {
+    margin-top: 3px; // MARGIN TOP FOR FOOTER BUTTON
+    background: Gainsboro; // BACKGROUND COLOUR FOR FOOTER BUTTON
 }
 
 .data {

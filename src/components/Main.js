@@ -18,14 +18,14 @@ function Main(props) {
       } else if (props.data === 'country') {
         displayValue = item.country
       } else if (props.data === 'emojiAndCountry') {
-        displayValue = item.emoji + item.country
+        displayValue = item.emoji + " " + item.country
       }
       return (
         <div className='data' key={index}>
           <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>
             <span className='span'> {displayValue}</span>
           </div>
-          <label className='number'>{item.sign_ups.toLocaleString('en-US')}</label>
+          <span className='number'>{item.sign_ups.toLocaleString('en-US')}</span>
         </div>
       )
     })

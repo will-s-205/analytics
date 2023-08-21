@@ -1,0 +1,35 @@
+.header-main {
+    display: flex; // DISPLAY FLEX 
+    align-items: center; // ALIGN ITEMS 
+    justify-content: space-between; // JUSTIFY CONTENT 
+    padding-left: 3rem; // PADDING LEFT
+    padding-right: 3rem; // PADDING RIGHT 
+    margin-top: 30px; // MARGIN TOP
+    margin-bottom: -35px; // MARGIN BOTTOM 
+}
+
+.filter-days-bar {
+    display: flex;
+    width: 165px; // WIDTH OF FILTER DAYS BAR
+    height: 40px; // HEIGHT OF FILTER DAYS BAR
+    background: var(--white); // BACKGROUND COLOUR OF FILTER DAYS BAR
+    align-items: center; // ALIGN ITEMS
+    box-shadow: 3px 3px 9px var(--gray-light); // BOX SHADOW 
+    border-radius: 10px; // BORDER RADIUS 
+    justify-content: space-evenly; // JUSTIFY CONTENT 
+}
+
+.filter-days-bar>button {
+    color: var(--gray);
+    margin: 3px;
+    padding: 6px;
+    background: var(--white-light);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold; // FONT WEIGHT
+}
+
+.filter-days-bar>button:hover {
+    background: var(--gray-light);
+    cursor: pointer;
+}
