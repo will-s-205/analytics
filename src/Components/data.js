@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         "country": "Ireland",
         "city": "Dublin",
@@ -130,3 +130,5 @@ export default [
         "browser": "UC Browser"
     }
 ]
+
+export default data

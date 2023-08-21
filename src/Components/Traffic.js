@@ -6,7 +6,8 @@ import Main from './Main'
 
 function Traffic() {
     const [dataSet, setDataset] = useState('company')
-    const [isToggled, setIsToggled] = useState(false)
+    const [isButtonsToggled, setIsButtonsToggled] = useState(false)
+    const [isSeeAllClicked, setIsSeeAllClicked] = useState(true)
 
     function toggleData() {
         if (dataSet === 'company') {
@@ -17,21 +18,29 @@ function Traffic() {
     }
 
     function toggleButtons() {
-        if (isToggled === true) {
-            setIsToggled(false)
+        if (isButtonsToggled === true) {
+            setIsButtonsToggled(false)
             toggleData()
         } else {
-            setIsToggled(true)
+            setIsButtonsToggled(true)
             toggleData()
+        }
+    }
+
+    function seeAll() {
+        if (isSeeAllClicked === false) {
+            setIsSeeAllClicked(true)
+        } else {
+            setIsSeeAllClicked(false)
         }
     }
 
     return (
         <div className='traffic minor-grid-item'>
             <div className='container'>
-                <Header title='Traffic' button1='Source' button2='City' handleButtonClick={toggleButtons} isToggled={isToggled} />
-                <Main number={6} data={dataSet} />
-                <Footer seeAll='See traffic sources' />
+                <Header title='Traffic' button1='Source' button2='City' handleButtonClick={toggleButtons} isToggled={isButtonsToggled} />
+                <Main data={dataSet} number={6} />
+                <Footer data={dataSet} seeAll='See traffic sources' handleButtonClick={seeAll} isClicked={isSeeAllClicked} />
             </div>
         </div>
     )
