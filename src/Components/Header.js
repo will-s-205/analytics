@@ -1,6 +1,6 @@
 import '../App.scss'
 
-function RenderHeader(props) {
+function Header(props) {
   return (
     <div className='header-container'>
       <h4>{props.title}</h4>
@@ -12,4 +12,4 @@ function RenderHeader(props) {
   )
 }
 
-export default RenderHeader
+export default Header

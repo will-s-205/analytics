@@ -3,7 +3,7 @@ import '../App.scss'
 function Footer(props) {
   return (
     <div>
-      <button className='button'>{props.button1}</button>
+      <button className='button'>{props.seeAll}</button>
     </div>
   );
 }

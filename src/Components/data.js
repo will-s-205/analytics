@@ -3,7 +3,7 @@ export default [
         "country": "USA",
         "city": "Mountain View",
         "emoji": "🇺🇸",
-        "faang_company": "Google",
+        "company": "Google",
         "email": "mary.smith@mail.com",
         "sign_ups": 3524,
         "friends_invites": 1178
@@ -12,7 +12,7 @@ export default [
         "country": "Ireland",
         "city": "Dublin",
         "emoji": "🇮🇪",
-        "faang_company": "Facebook",
+        "company": "Facebook",
         "email": "john.doedoe@gmail.com",
         "sign_ups": 9571,
         "friends_invites": 4232
@@ -21,7 +21,7 @@ export default [
         "country": "USA",
         "city": "Cupertino",
         "emoji": "🇺🇸",
-        "faang_company": "Apple",
+        "company": "Apple",
         "email": "alex.boba@icloud.com",
         "sign_ups": 6290,
         "friends_invites": 2450
@@ -30,7 +30,7 @@ export default [
         "country": "India",
         "city": "Hyderabad",
         "emoji": "🇮🇳",
-        "faang_company": "Amazon",
+        "company": "Amazon",
         "email": "priya.akay@gmail.com",
         "sign_ups": 7589,
         "friends_invites": 3312
@@ -39,7 +39,7 @@ export default [
         "country": "USA",
         "city": "Menlo Park",
         "emoji": "🇺🇸",
-        "faang_company": "Meta",
+        "company": "Meta",
         "email": "lucas.fb@hotmail.com",
         "sign_ups": 5821,
         "friends_invites": 1258
@@ -48,7 +48,7 @@ export default [
         "country": "USA",
         "city": "Mountain View",
         "emoji": "🇺🇸",
-        "faang_company": "YouTube",
+        "company": "YouTube",
         "email": "bob.dodo@gmail.com",
         "sign_ups": 4354,
         "friends_invites": 2178
@@ -57,7 +57,7 @@ export default [
         "country": "Canada",
         "city": "Toronto",
         "emoji": "🇨🇦",
-        "faang_company": "Shopify",
+        "company": "Shopify",
         "email": "david.shop@mail.com",
         "sign_ups": 1124,
         "friends_invites": 578
@@ -66,7 +66,7 @@ export default [
         "country": "UK",
         "city": "London",
         "emoji": "🇬🇧",
-        "faang_company": "DeepMind",
+        "company": "DeepMind",
         "email": "alice.mind@gmail.com",
         "sign_ups": 4512,
         "friends_invites": 3128
@@ -75,7 +75,7 @@ export default [
         "country": "USA",
         "city": "Redmond",
         "emoji": "🇺🇸",
-        "faang_company": "Microsoft",
+        "company": "Microsoft",
         "email": "mike.ms@outlook.com",
         "sign_ups": 7582,
         "friends_invites": 2514
@@ -84,7 +84,7 @@ export default [
         "country": "Japan",
         "city": "Tokyo",
         "emoji": "🇯🇵",
-        "faang_company": "Sony",
+        "company": "Sony",
         "email": "hiroshi.sony@mail.jp",
         "sign_ups": 6890,
         "friends_invites": 3245
@@ -93,7 +93,7 @@ export default [
         "country": "South Korea",
         "city": "Seoul",
         "emoji": "🇰🇷",
-        "faang_company": "Samsung",
+        "company": "Samsung",
         "email": "min.jun@samsung.co.kr",
         "sign_ups": 7258,
         "friends_invites": 2941
@@ -102,7 +102,7 @@ export default [
         "country": "China",
         "city": "Beijing",
         "emoji": "🇨🇳",
-        "faang_company": "Baidu",
+        "company": "Baidu",
         "email": "liu.bai@baidu.cn",
         "sign_ups": 8521,
         "friends_invites": 4372
@@ -111,25 +111,25 @@ export default [
         "country": "Germany",
         "city": "Berlin",
         "emoji": "🇩🇪",
-        "faang_company": "SAP",
+        "company": "SAP",
         "email": "jens.sap@web.de",
-        "sign_ups": 6412,
-        "friends_invites": 3124
+        "sign_ups": 2412,
+        "friends_invites": 1124
     },
     {
         "country": "Australia",
         "city": "Sydney",
         "emoji": "🇦🇺",
-        "faang_company": "Atlassian",
+        "company": "Atlassian",
         "email": "chris.atlas@mail.au",
-        "sign_ups": 5398,
-        "friends_invites": 2648
+        "sign_ups": 1398,
+        "friends_invites": 648
     },
     {
         "country": "Brazil",
         "city": "Sao Paulo",
         "emoji": "🇧🇷",
-        "faang_company": "iFood",
+        "company": "iFood",
         "email": "roberto.food@ifood.com.br",
         "sign_ups": 6842,
         "friends_invites": 3147
@@ -138,7 +138,7 @@ export default [
         "country": "Sweden",
         "city": "Stockholm",
         "emoji": "🇸🇪",
-        "faang_company": "Spotify",
+        "company": "Spotify",
         "email": "anna.song@spotify.com",
         "sign_ups": 7935,
         "friends_invites": 3178
@@ -147,7 +147,7 @@ export default [
         "country": "France",
         "city": "Paris",
         "emoji": "🇫🇷",
-        "faang_company": "Dassault",
+        "company": "Dassault",
         "email": "henri.dass@mail.fr",
         "sign_ups": 7210,
         "friends_invites": 3123
@@ -156,7 +156,7 @@ export default [
         "country": "Italy",
         "city": "Milan",
         "emoji": "🇮🇹",
-        "faang_company": "Ferrari",
+        "company": "Ferrari",
         "email": "franco.speed@ferrari.it",
         "sign_ups": 6534,
         "friends_invites": 2985
@@ -165,7 +165,7 @@ export default [
         "country": "Spain",
         "city": "Madrid",
         "emoji": "🇪🇸",
-        "faang_company": "Cabify",
+        "company": "Cabify",
         "email": "maria.ride@cabify.es",
         "sign_ups": 6458,
         "friends_invites": 2856
@@ -174,7 +174,7 @@ export default [
         "country": "Russia",
         "city": "Moscow",
         "emoji": "🇷🇺",
-        "faang_company": "Yandex",
+        "company": "Yandex",
         "email": "ivan.search@yandex.ru",
         "sign_ups": 7298,
         "friends_invites": 3642
@@ -183,7 +183,7 @@ export default [
         "country": "Israel",
         "city": "Tel Aviv",
         "emoji": "🇮🇱",
-        "faang_company": "Wix",
+        "company": "Wix",
         "email": "noa.web@wix.co.il",
         "sign_ups": 6841,
         "friends_invites": 2945
@@ -192,7 +192,7 @@ export default [
         "country": "Mexico",
         "city": "Mexico City",
         "emoji": "🇲🇽",
-        "faang_company": "Kueski",
+        "company": "Kueski",
         "email": "raul.fintech@kueski.com.mx",
         "sign_ups": 6478,
         "friends_invites": 3129
@@ -201,34 +201,34 @@ export default [
         "country": "Singapore",
         "city": "Singapore",
         "emoji": "🇸🇬",
-        "faang_company": "Grab",
+        "company": "Grab",
         "email": "lim.taxi@grab.sg",
-        "sign_ups": 7158,
+        "sign_ups": 1158,
         "friends_invites": 2987
     },
     {
         "country": "UAE",
         "city": "Dubai",
         "emoji": "🇦🇪",
-        "faang_company": "Careem",
+        "company": "Careem",
         "email": "ahmed.drive@careem.ae",
-        "sign_ups": 6543,
+        "sign_ups": 2543,
         "friends_invites": 3174
     },
     {
         "country": "South Africa",
         "city": "Cape Town",
         "emoji": "🇿🇦",
-        "faang_company": "Naspers",
+        "company": "Naspers",
         "email": "sibu.media@naspers.co.za",
-        "sign_ups": 6723,
-        "friends_invites": 3142
+        "sign_ups": 1723,
+        "friends_invites": 1142
     },
     {
         "country": "Argentina",
         "city": "Buenos Aires",
         "emoji": "🇦🇷",
-        "faang_company": "MercadoLibre",
+        "company": "MercadoLibre",
         "email": "lola.market@mercadolibre.ar",
         "sign_ups": 6854,
         "friends_invites": 3246
