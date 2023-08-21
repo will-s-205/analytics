@@ -1,10 +1,9 @@
 {
-  "homepage": "https://will-s-205.github.io/summer-referral-competition",
-  "name": "summer-referral-competition",
+  "homepage": "https://will-s-205.github.io/analytics",
+  "name": "analytics",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tooltip": "^5.21.1",
