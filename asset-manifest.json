@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/summer-referral-competition/static/css/main.f9b5f3e7.css",
-    "main.js": "/summer-referral-competition/static/js/main.59312edf.js",
-    "index.html": "/summer-referral-competition/index.html",
-    "main.f9b5f3e7.css.map": "/summer-referral-competition/static/css/main.f9b5f3e7.css.map",
-    "main.59312edf.js.map": "/summer-referral-competition/static/js/main.59312edf.js.map"
+    "main.css": "/analytics/static/css/main.f9b5f3e7.css",
+    "main.js": "/analytics/static/js/main.95d0609c.js",
+    "index.html": "/analytics/index.html",
+    "main.f9b5f3e7.css.map": "/analytics/static/css/main.f9b5f3e7.css.map",
+    "main.95d0609c.js.map": "/analytics/static/js/main.95d0609c.js.map"
   },
   "entrypoints": [
     "static/css/main.f9b5f3e7.css",
-    "static/js/main.59312edf.js"
+    "static/js/main.95d0609c.js"
   ]
 }
