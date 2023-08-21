@@ -1,19 +1,42 @@
 import '../App.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Header(props) {
   const [button1Clicked, setButton1Clicked] = useState(true)
   const [button2Clicked, setButton2Clicked] = useState(false)
 
-  const handleButton1Click = () => {
-    setButton1Clicked(true)
-    setButton2Clicked(false)
-  }
+  useEffect(() => {
+    console.log('Header - useEffect')
+    if (props.isToggled === true) {
+      setButton1Clicked(false)
+      setButton2Clicked(true)
+      console.log('Header - isToggled is true')
+    } else if (props.isToggled === false) {
+      setButton1Clicked(true)
+      setButton2Clicked(false)
+      console.log('Header - isToggled is false')
+    }
+  }, [props.isToggled])
 
-  const handleButton2Click = () => {
-    setButton2Clicked(true)
-    setButton1Clicked(false)
-  }
+  // const handleButtonClick = () => {
+  //   if (props.isToggled === true) {
+  //     setButton1Clicked(false)
+  //     console.log('Header - Button 1 clicked')
+  //   } else if (props.isToggled === false) {
+  //     setButton2Clicked(false)
+  //     console.log('Header - Button 2 clicked')
+  //   }
+  // }
+
+  // const handleButton1Click = () => {
+  //   setButton1Clicked(true)
+  //   setButton2Clicked(false)
+  // }
+
+  // const handleButton2Click = () => {
+  //   setButton1Clicked(false)
+  //   setButton2Clicked(true)
+  // }
 
   return (
     <div className='header-container'>
@@ -22,12 +45,12 @@ function Header(props) {
         <button
           className='button'
           style={button1Clicked ? { backgroundColor: 'Gainsboro' } : {}}
-          onClick={handleButton1Click}
+          onClick={props.handleButtonClick}
         >{props.button1}</button>
         <button
           className='button'
           style={button2Clicked ? { backgroundColor: 'Gainsboro' } : {}}
-          onClick={handleButton2Click}
+          onClick={props.handleButtonClick}
         >{props.button2}</button>
       </div>
     </div>
