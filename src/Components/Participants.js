@@ -5,7 +5,7 @@ import React, { useState, useCallback } from "react"
 import { BarChart, Bar, Cell, ResponsiveContainer } from "recharts"
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
-import participants from '../assets/images/participants.png';
+import participants from '../assets/images/participants.png'
 
 function Participants() {
     const maxSignups = data.map(data => data.sign_ups).reduce((a, b) => a + b, 0)
@@ -17,7 +17,7 @@ function Participants() {
             setActiveIndex(index)
         },
         [setActiveIndex]
-    );
+    )
 
     return (
         <div className='participants participants-grid-item'>
@@ -44,7 +44,7 @@ function Participants() {
                 <Tooltip id="my-tooltip" />
             </div>
         </div>
-    );
+    )
 }
 
 export default Participants

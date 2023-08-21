@@ -6,6 +6,9 @@ function Main(props) {
   // FUNCTION TO GET THE PERCENTAGE OF SIGNUPS FOR EACH COUNTRY (USED TO SET THE WIDTH OF THE PROGRESS BAR)
   const getPercentage = (currentSignups, maxSignups) => (100 * currentSignups) / maxSignups
 
+  const handleClick = () => {
+    console.log("Button was clicked with prop:", props.message);
+  }
 
   return data
     .slice(0, props.number)
@@ -23,7 +26,9 @@ function Main(props) {
       return (
         <div className='data' key={index}>
           <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>
-            <span className='span'> {displayValue}</span>
+            <span
+              className='span'
+            > {displayValue} </span>
           </div>
           <span className='number'>{item.sign_ups.toLocaleString('en-US')}</span>
         </div>
