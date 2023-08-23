@@ -82,12 +82,20 @@
 }
 
 .button:hover {
-    background-color: var(--white-light); // BACKGROUND COLOUR ON HOVER
+    background-color: #dcdcdc; // BACKGROUND COLOUR ON HOVER
+}
+
+.button:focus {
+    outline: none; // OUTLINE NONE 
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7); // BACKGROUND COLOUR ON ACTIVE
 }
 
 .footer-button {
     margin-top: 3px; // MARGIN TOP FOR FOOTER BUTTON
-    background: Gainsboro; // BACKGROUND COLOUR FOR FOOTER BUTTON
+    background: var(--white-light); // BACKGROUND COLOUR FOR FOOTER BUTTON
 }
 
 .data {

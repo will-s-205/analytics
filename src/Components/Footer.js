@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 function Footer(props) {
   const [isFooterClicked, setIsFooterClicked] = useState(false)
-  const styles = { backgroundColor: isFooterClicked ? 'gray' : 'Gainsboro' }
+  const styles = { boxShadow: isFooterClicked ? 'inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7)' : 'none' }
   const displayNone = { display: isFooterClicked ? '' : 'none' }
 
   useEffect(() => {

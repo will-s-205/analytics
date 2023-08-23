@@ -21,12 +21,12 @@ function Header(props) {
       <div className='buttons'>
         <button
           className='button'
-          style={button1Clicked ? { backgroundColor: 'Gainsboro' } : {}}
+          style={button1Clicked ? { backgroundColor: '#eee' } : {}}
           onClick={props.handleButtonClick}
         >{props.button1}</button>
         <button
           className='button'
-          style={button2Clicked ? { backgroundColor: 'Gainsboro' } : {}}
+          style={button2Clicked ? { backgroundColor: '#eee' } : {}}
           onClick={props.handleButtonClick}
         >{props.button2}</button>
       </div>
