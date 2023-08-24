@@ -5,6 +5,7 @@ React mini-project for a single web page for analytical purposes.
 ## Goal
 App created as a part of efforts to learn and practice React, JS, Analytics
 ## Learned and practiced
-* Building apps with React and JavaScript
+* Building apps with React and React Hooks
 * Building responsive layout
 * Passing props to components
+* Using Fetch API

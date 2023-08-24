@@ -1,12 +1,30 @@
 import '../App.scss'
 import data from './data.js'
+import { useState, useEffect } from 'react'
 
 function Main(props) {
-  const maxSignups = data.map(data => data.sign_ups).reduce((a, b) => Math.max(a, b))
+  const url = 'https://gist.githubusercontent.com/will-s-205/fa897991243cbfa175d062181d437928/raw/7de6c202a661b2809efa6f55e22b8d33998c3c06/data.json'
+  // INITIALIZE THE STATE WITH AN EMPTY ARRAY
+  const [dataset, setDataset] = useState([''])
+
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((response) => {
+        setDataset(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error)
+        // PLAN B - IS TO USE THE DATA FROM THE LOCAL FILE OR LOCAL STORAGE
+        setDataset(data)
+      })
+  }, []) // EMPTY DEPENDENCY ARRAY MEANS THIS USEEFFECT RUNS ONCE WHEN COMPONENT MOUNTS
+
+  const maxSignups = dataset.map(data => data.sign_ups).reduce((a, b) => Math.max(a, b))
   // FUNCTION TO GET THE PERCENTAGE OF SIGNUPS FOR EACH COUNTRY (USED TO SET THE WIDTH OF THE PROGRESS BAR)
   const getPercentage = (currentSignups, maxSignups) => (100 * currentSignups) / maxSignups
 
-  return data
+  return dataset
     .slice(0, props.number)
     .sort((a, b) => b.sign_ups - a.sign_ups)
     .map((item, index) => {
@@ -41,7 +59,8 @@ function Main(props) {
           <div className='progress-bar' style={{ width: `${getPercentage(item.sign_ups, maxSignups)}%` }}>
             {displayValue}
           </div>
-          <span className='number'>{item.sign_ups.toLocaleString('en-US')}</span>
+          {/* QUESTION MARK BELOW IS TO CHECK IF THE VALUE IS NUMBER OR UNDEFINED */}
+          <span className='number'>{item.sign_ups?.toLocaleString('en-US')}</span>
         </div>
       )
     })
