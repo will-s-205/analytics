@@ -6,7 +6,7 @@ import Leaderboard from './components/Leaderboard'
 import Traffic from './components/Traffic'
 import Locations from './components/Locations'
 import Behaviour from './components/Behaviour'
-import Author from './components/Author'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Behaviour />
           </div>
         </div>
-        <Author />
+        <Contact />
       </div>
     </div>
   )
