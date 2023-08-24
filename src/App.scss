@@ -117,15 +117,15 @@
 // KEEP POPUP NICE AND SHINY AND IN THE MIDDLE OF THE SCREEN
 .popup {
     position: absolute;
-    width: 200px;
+    width: 300px;
     background: var(--white-light);
     color: var(--main);
     z-index: 1;
-    top: 30%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    font-size: 20px;
+    transform: translate(-50%, 0); // TO KEEP POPUP IN THE MIDDLE OF THE SCREEN
+    padding: 40px;
+    font-size: 28px;
     border-radius: 10px;
     box-shadow: 3px 13px 20px var(--gray-light);
     border: 5px solid var(--silver);
