@@ -3,7 +3,7 @@ import data from './data.js'
 import { useState, useEffect } from 'react'
 
 function Main(props) {
-  const url = 'https://gist.githubusercontent.com/will-s-205/fa89791243cbfa175d062181d437928/raw/7de6c202a661b2809efa6f55e22b8d33998c3c06/data.json'
+  const url = 'https://gist.githubusercontent.com/will-s-205/fa897991243cbfa175d062181d437928/raw/7de6c202a661b2809efa6f55e22b8d33998c3c06/data.json'
   // INITIALIZE THE STATE WITH AN EMPTY ARRAY
   const [dataset, setDataset] = useState([''])
 
